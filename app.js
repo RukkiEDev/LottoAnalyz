@@ -2,7 +2,7 @@
 
 // ---- ตั้งค่า ----
 const WINDOW_SIZE = 100;   // จำนวนงวดย้อนหลัง
-const MAX_PICKS = 10;      // แสดงสูงสุด
+const MAX_PICKS = 12;      // แสดงสูงสุด
 const DECAY = 30;          // ยิ่งน้อย ยิ่งให้น้ำหนักงวดล่าสุดมาก
 const DATA_URLS = [
   "data/draws.json",
