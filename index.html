@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LottoAnalyz – สถิติเลขท้าย 2 ตัว</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>สถิติเลขท้าย 2 ตัว</h1>
+      <p class="sub">วิเคราะห์ผลสลากกินแบ่งรัฐบาลย้อนหลัง 100 งวด นับจากวันที่กดปุ่ม</p>
+    </header>
+
+    <button id="run" type="button">วิเคราะห์ตอนนี้</button>
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <section id="result" hidden>
+      <p id="summary"></p>
+      <ol id="picks" class="picks"></ol>
+      <p class="method">
+        เกณฑ์: คะแนน = ความถี่ในรอบ 100 งวด (50%) + ความถี่ที่ถ่วงน้ำหนักงวดล่าสุด (50%)
+        แสดงเฉพาะเลขที่คะแนนสูงกว่าเกณฑ์เฉลี่ย ขั้นต่ำ 1 สูงสุด 10 หมายเลข
+        ถ้าคะแนนเท่ากัน เลขที่ออกล่าสุดกว่าจะอยู่ก่อน
+      </p>
+    </section>
+
+    <footer>
+      <p><strong>ข้อควรทราบ:</strong> การออกสลากเป็นเหตุการณ์สุ่มที่แต่ละงวดไม่ขึ้นต่อกัน
+      สถิติย้อนหลังไม่ได้เพิ่มโอกาสถูกรางวัล เว็บนี้จัดทำเพื่อความบันเทิงเท่านั้น</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
